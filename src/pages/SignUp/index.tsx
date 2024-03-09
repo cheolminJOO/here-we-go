@@ -9,6 +9,7 @@ import { twMerge } from 'tailwind-merge';
 import SettingPW from '../Password';
 import { useRouter } from 'next/router';
 import { SignUpSchema } from '@/components/Validator/SignUpSchema';
+import Image from 'next/image';
 
 interface Person {
   name: string;
@@ -54,7 +55,7 @@ const SettingInfo = () => {
 
   return (
     <div className='px-96 flex justify-around items-center w-full h-screen'>
-      <img src='/ThumbsUpCM.png' alt='철민' />
+      <Image src='/ThumbsUpCM.png' alt='철민' />
       <div className=' p-5 rounded-2xl w-96 h-[600px] border '>
         {!next && (
           <form onSubmit={handleSubmit(onChangeData)}>
