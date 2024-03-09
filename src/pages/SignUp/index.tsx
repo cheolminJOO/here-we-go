@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button } from '@/components/ui/button';
+
 import { useForm } from 'react-hook-form';
 
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -8,8 +8,10 @@ import { Modal } from 'antd';
 import { twMerge } from 'tailwind-merge';
 import SettingPW from '../Password';
 import { useRouter } from 'next/router';
-import { SignUpSchema } from '@/components/Validator/SignUpSchema';
+
 import Image from 'next/image';
+import { SignUpSchema } from '../../components/Validator/SignUpSchema';
+import { Button } from '../../components/ui/button';
 
 interface Person {
   name: string;

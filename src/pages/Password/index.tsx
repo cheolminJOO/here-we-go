@@ -1,11 +1,12 @@
-import { PasswordSchema } from '@/components/Validator/SignUpSchema';
-import { Button } from '@/components/ui/button';
+
 import { zodResolver } from '@hookform/resolvers/zod';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import React, { ChangeEvent, useRef, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import Swal from 'sweetalert2';
+import { PasswordSchema } from '../../components/Validator/SignUpSchema';
+import { Button } from '../../components/ui/button';
 
 interface IProps {
   setNext: React.Dispatch<React.SetStateAction<boolean>>;
